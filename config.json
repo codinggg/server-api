@@ -1,0 +1,5 @@
+{
+  "RedisHost": "redis",
+  "redis_host": "dev-redis",
+  "redis_port": "6379"
+}

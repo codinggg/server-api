@@ -1,0 +1,16 @@
+version: '3'
+services:
+  app:
+    # build: .
+    image: server-api
+    ports:
+      - "3000:3000"
+#    environment:
+#      REDIS_PASSWORD: password123
+    volumes:
+      - "./config.json:/app/config.json"
+  dev-redis:
+#    image: "bitnami/redis:latest"
+    image: redis:latest
+#    environment:
+#      REDIS_PASSWORD: password123
